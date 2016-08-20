@@ -1,2 +1,39 @@
-<h1> <%= projectname %> </h1>
-<p> <%= description %> </p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+    <!-- Milligram CSS minified -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+
+    <style>
+    .button-large {
+      font-size: 1.4rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+      padding: 0 2rem;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" style="padding-top: 2em">
+        <div class="column"></div>
+        <div class="column" style="text-align: center">
+
+          <h1> <%= title %> </h1>
+          <p> <%= description %> </p>
+
+          <a href="../../index.html" class="button">Back</a>
+
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

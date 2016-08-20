@@ -5,6 +5,7 @@ output = ""
 
 projectname = ""
 description = ""
+title = ""
 
 projects = []
 

@@ -1,9 +1,46 @@
-<h1>Projects</h1>
+<!DOCTYPE html>
+<html>
+  <head>
 
-<ul>
-  <% projects.each do |project| %>
-    <li>
-      <a href="<%= project.path %>"><%= project.name %></a>
-    </li>
-  <% end %>
-</ul>
+  <title>Packman Repo</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.1.0/milligram.min.css">
+
+  <style>
+  .button-large {
+    font-size: 1.4rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 2rem;
+  }
+  </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row" style="padding-top: 2em">
+        <div class="column">
+        </div>
+        <div class="column" style="text-align: center">
+          <h1>Projects</h1>
+          <ul style="list-style: none">
+            <% projects.each do |project| %>
+              <li>
+                <a class="button button-large button-outline" style="" href="<%= project.path %>"><%= project.name %></a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </body>
+</html>
