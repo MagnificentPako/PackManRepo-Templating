@@ -27,7 +27,7 @@ Dir["projects/*.description"].each do |name|
 
   tuple = OpenStruct.new
   tuple.path = "public/projects/#{projectname}.html"
-  tuple.name = projectname
+  tuple.name = title
 
   projects << tuple
 
