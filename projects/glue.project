@@ -1,0 +1,9 @@
+name = glue
+  type = raw
+    url = https://raw.github.com/dummy/url
+    filename = glue
+  category = utility
+  dependencies = none
+  version = 0.1
+  size = 0
+end
